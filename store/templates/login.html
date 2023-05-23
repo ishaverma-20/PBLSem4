@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="p-3 m-3">
+        <div class="col-lg-5 rounded mx-auto border pt-4">
+            <div class="text-center col">
+            
+                <img
+                src="data:image/png;base64,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" alt=""
+                class="" style="height: 150px;">
+            <hr>
+            </div>
+            <h3 class="alert alert-light rounded-pill" style="text-align:center" >Login</h3>
+            <form action="/login" method="POST">
+                
+                {% csrf_token %}
+
+                {% if error%}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- email -->
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input required type="email" name="email" id=""
+                    value="{{values.email}}" 
+                    class=" form-control-sm form-control" placeholder="abc@gmail.com">
+                </div>
+
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" 
+                    name="password" 
+                    id=""
+                     class="form-control form-control-sm" >
+                </div>
+
+                <!--Checkme button-->
+            <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12">Login</button>
+
+
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
